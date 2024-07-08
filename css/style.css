@@ -41,6 +41,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        top: 0;
+        position: sticky;
         background: var(--bgd-200);
         grid-column: span 1;
         height: 100vh;
@@ -530,6 +532,85 @@ body {
 }
 
 
+/* the edit form */
+.edit-form{
+    padding: 2rem;
+    
+    .edit{
+        background: var(--bgd-200);
+        padding: 2rem;
+
+        form{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+
+            h2{
+                font-size: 20px;
+                font-weight: 800;
+                color: var(--col-design);
+                text-transform: capitalize;
+            }
+            h4{
+                color: var(--fgd-100);
+                font-size: 16px;
+            }
+            .input-field{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                label{
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: var(--fgd-200);
+                }
+                textarea,
+                input{
+                    font-size: 14px;
+                    padding: 1rem;
+                    background: transparent;
+                    outline: none;
+                    color: var(--fgd-100);
+                    border: none;
+                    background: var(--bgd-100);
+                    border-radius: 5px;
+                }
+
+                textarea{
+                    min-height: 10rem;
+                    resize: none;
+                }
+            }
+
+            button{
+                padding: 1rem 3rem;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                background: var(--col-design);
+                border: none;
+                outline: none;
+                width: max-content;
+                display: flex;
+                grid-column: 2/3;
+                justify-self: flex-end;
+                border-radius: 5px;
+                transition: all 400ms ease;
+                text-transform: capitalize;
+
+                &:hover{
+                    background: var(--bgd-200);
+                    color: var(--fgd-100);
+                }
+            }
+
+            .spanTwo{
+                grid-column: span 2;
+            }
+        }
+    }
+}
 
 /* =====media queries===== */
 @media(width < 1100px) {
@@ -594,6 +675,20 @@ body {
         .service{
             padding: 2rem 1rem;
         }
+        .edit-form{
+            
+            .edit{
+        
+                form{
+                    display: flex;
+                    flex-direction: column;
+
+                    .spanTwo{
+                        grid-column: span 1;
+                    }
+                }
+            }
+        } 
     }
 }
 
@@ -636,6 +731,19 @@ body {
         .service{
             padding: 2rem 1rem;
         }
-    
+        .edit-form{
+            padding: 2rem 1rem 4rem 1rem;
+            .edit{
+                padding: 1rem;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .spanTwo{
+                        grid-column: span 1;
+                    }
+                }
+            }
+        } 
     }
 }
