@@ -65,3 +65,35 @@ document.addEventListener('click', (event) => {
         body.classList.remove('active');
     }
 });
+
+
+
+// for the add itemslist
+
+let items = [];
+
+function addItem() {
+    const itemInput = document.getElementById('item-input');
+    const itemValue = itemInput.value.trim();
+
+    if (itemValue) {
+        items.push(itemValue);
+        const itemList = document.getElementById('item-list');
+        const listItem = document.createElement('li');
+        listItem.textContent = itemValue;
+
+        const deleteBtn = document.createElement('span');
+        deleteBtn.textContent = '×';
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.onclick = () => removeItem(itemValue, listItem);
+
+        listItem.appendChild(deleteBtn);
+        itemList.appendChild(listItem);
+        itemInput.value = '';
+    }
+}
+
+function removeItem(itemValue, listItem) {
+    items = items.filter(item => item !== itemValue);
+    listItem.remove();
+}

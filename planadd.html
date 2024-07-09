@@ -40,7 +40,7 @@
                     <li><a href="index.html"><i
                                 class="fa-solid fa-gauge"></i>
                             <span>Dashbard</span></a></li>
-                    <li class="active"><a href="services.html"><i
+                    <li><a href="services.html"><i
                                 class="fa-solid fa-satellite-dish"></i>
                             <span>services</span></a></li>
                     <li><a href="feature.html"><i
@@ -54,7 +54,7 @@
                             <span>project</span></a></li>
                     <li><a href="blog.html"><i
                                 class="fa-solid fa-blog"></i><span>blog</span></a></li>
-                    <li><a href="plan.html"><i
+                    <li class="active"><a href="plan.html"><i
                                 class="fa-solid fa-tags"></i>
                             <span>price</span></a></li>
                     <li><a href="testmonial.html"><i
@@ -115,71 +115,38 @@
                 <div class="edit-form">
                     <div class="edit">
                         <form action="#">
-                            <h2 class="spanTwo">Edit Services Card</h2>
+                            <h2 class="spanTwo">Add Plan Card</h2>
                             <div class="input-field">
-                                <label for="title">Title</label>
+                                <label for="title">Plan
+                                    Heading</label>
                                 <input type="text"
-                                    placeholder="Enter title">
+                                    placeholder="Enter Plan heading">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">Plan
+                                    description</label>
+                                <input type="text"
+                                    placeholder="Enter Plan description">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">Plan features
+                                    <small>(you can insert
+                                        multiple)</small></label>
+                                <input type="text" id="item-input"
+                                    placeholder="Enter Plan description">
+                                <button onclick="addItem()">Add
+                                    list</button>
+                            </div>
+                            <div class="list-box">
+                                <h4>the features list</h4>
+                                <ul id="item-list"></ul>
                             </div>
 
-                            <div class="input-field spanTwo">
-                                <label for="textarea">Service
-                                    descriptions</label>
-                                <textarea placeholder="Enter service descriptions"></textarea>
-                            </div>
-
-                            <h2 class="spanTwo">Service description Page edits</h2>
-                            
-                            <h4 class="spanTwo">Process Headings</h4>
                             <div class="input-field">
-                                <label for="title">first
-                                    Process</label>
+                                <label for="title">Plan
+                                    price</label>
                                 <input type="text"
-                                    placeholder="Enter first Process title">
-                            </div>
-                            <div class="input-field">
-                                <label for="title">second
-                                    Process</label>
-                                <input type="text"
-                                    placeholder="Enter second Process title">
-                            </div>
-                            <div class="input-field">
-                                <label for="title">third
-                                    Process</label>
-                                <input type="text"
-                                    placeholder="Enter third Process title">
-                            </div>
-                            <div class="input-field spanTwo">
-                                <label for="textarea">First process
-                                    descriptions</label>
-                                <textarea name="textarea"
-                                    placeholder="Enter service descriptions"></textarea>
-                            </div>
-                            <div class="input-field spanTwo">
-                                <label for="textarea">Second process
-                                    descriptions</label>
-                                <textarea name="textarea"
-                                    placeholder="Enter service descriptions"></textarea>
-                            </div>
-                            <div class="input-field spanTwo">
-                                <label for="textarea">Third process
-                                    descriptions</label>
-                                <textarea name="textarea"
-                                    placeholder="Enter service descriptions"></textarea>
-                            </div>
-                            <br>
-                            <h4>Process images</h4>
-                            <div class="input-field">
-                                <label for="title">Upload image for your first process</label>
-                                <input type="file">
-                            </div>
-                            <div class="input-field">
-                                <label for="title">Upload image for your first process</label>
-                                <input type="file">
-                            </div>
-                            <div class="input-field">
-                                <label for="title">Upload image for your first process</label>
-                                <input type="file">
+                                    placeholder="Enter Plan price">
                             </div>
                             <br>
                             <button>Add</button>

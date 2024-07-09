@@ -132,12 +132,12 @@
                             <div class="input-field spanTwo">
                                 <label for="textarea">Blog
                                     descriptions</label>
-                                <textarea name="textarea"
+                                <textarea name="content"
                                     placeholder="Enter Blog descriptions"></textarea>
                             </div>
                             
                             <br>
-                            <h4>Process images</h4>
+                            <!-- <h4>Process images</h4>
                             <div class="input-field">
                                 <label for="title">Upload Blog feature image</label>
                                 <input type="file">
@@ -149,7 +149,7 @@
                             <div class="input-field">
                                 <label for="title">Upload blog image</label>
                                 <input type="file">
-                            </div>
+                            </div> -->
                             <br>
                             <button>Add Blog</button>
                         </form>
@@ -158,7 +158,10 @@
                 <!-- ==the landing page service card content== -->
 
             </div>
-
-            <script src="./js/script.js"></script>
+            <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+            <script>
+                CKEDITOR.replace('content');
+                </script>
+                <script src="./js/script.js"></script>
         </body>
     </html>
