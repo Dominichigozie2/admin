@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List</title>
+    <style>
+        #item-list {
+            margin-top: 10px;
+        }
+        #item-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Items</h1>
+    <input type="text" id="item-input" placeholder="Enter item">
+    <button onclick="addItem()">Add</button>
+    <ul id="item-list"></ul>
+    <button onclick="saveItems()">Save</button>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            const itemInput = document.getElementById('item-input');
+            const itemValue = itemInput.value.trim();
+
+            if (itemValue) {
+                items.push(itemValue);
+                const itemList = document.getElementById('item-list');
+                const listItem = document.createElement('li');
+                listItem.textContent = itemValue;
+                itemList.appendChild(listItem);
+                itemInput.value = '';
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--=====font awesome CDN =====-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--=====font awesome CDN =====-->
+
+        <!--=====css links=====-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="body-container">
+            <!-- ==the side bar== -->
+            <header>
+                <i class="fa-regular fa-circle-xmark"></i>
+                <div class="logo">
+                    <a href="#"><img src="./img/dev.png" alt></a>
+                </div>
+
+                <!-- the admin thumbnail -->
+                <div class="admin-thubnail">
+                    <div class="admin-image">
+                        <img src="./img/CEO.jpg" alt>
+                    </div>
+                    <div class="admin-info">
+                        <h4>John Milk</h4>
+                        <p>Admin</p>
+                    </div>
+                </div>
+
+                <!-- the list items -->
+                <ul class="nav-list">
+                    <li><a href="index.html"><i
+                                class="fa-solid fa-gauge"></i>
+                            <span>Dashbard</span></a></li>
+                    <li><a href="services.html"><i
+                                class="fa-solid fa-satellite-dish"></i>
+                            <span>services</span></a></li>
+                    <li><a href="feature.html"><i
+                                class="fa-solid fa-layer-group"></i>
+                            <span>features</span></a></li>
+                    <li><a href="team.html"><i
+                                class="fa-solid fa-people-group"></i>
+                            <span>team</span></a></li>
+                    <li class="active"><a href="project.html"><i
+                                class="fa-solid fa-building-shield"></i>
+                            <span>project</span></a></li>
+                    <li><a href="blog.html"><i
+                                class="fa-solid fa-blog"></i><span>blog</span></a></li>
+                    <li><a href="plan.html"><i
+                                class="fa-solid fa-tags"></i>
+                            <span>price</span></a></li>
+                    <li><a href="testmonial.html"><i
+                                class="fa-solid fa-message"></i><span>Testmonial</span></a></li>
+                </ul>
+            </header>
+
+            <!-- ==the side bar== -->
+            <div class="maincontainer">
+                <!--======== top menu ======-->
+                <div class="top-menu">
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="search">
+                        <form action="#">
+                            <input type="search" name="search">
+                            <button type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div
+                            class="notfication-box dropdown-btn"><span><i
+                                    class="fa-solid fa-bell"></i></span><span
+                                class="dsm">Notifications</span>
+                            <span class="count">5</span> <i
+                                class="fa-solid fa-chevron-down"></i>
+                            <ul class="dropdown">
+                                <li class="whitecol"><a
+                                        href="#">Profile Add <span>15
+                                            minutes
+                                            ago</span></a></li>
+                                <li class="whitecol"><a href="#">New
+                                        user Add <span>15 minutes
+                                            ago</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="admin-thubnail dropdown-btn">
+                            <div class="admin-image">
+                                <img src="./img/CEO.jpg" alt>
+                            </div>
+                            <div class="admin-info">
+                                <h4>John Milk</h4>
+                                <i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <ul class="dropdown">
+                                <li><a href="#">My profile</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--======== top menu ======-->
+
+                <!-- ==the landing page service card content== -->
+                <div class="edit-form">
+                    <div class="edit">
+                        <form action="#">
+                            <h2 class="spanTwo">Edit project Card</h2>
+                            <div class="input-field">
+                                <label for="title">Project Category</label>
+                                <input type="text"
+                                    placeholder="Enter Project Category">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">Project Name</label>
+                                <input type="text"
+                                    placeholder="Enter Project name">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">Project feature image</label>
+                                <input type="File">
+                            </div>
+
+                            <h2 class="spanTwo">project description Page edits</h2>
+                            
+                            <h4 class="spanTwo">Process Headings</h4>
+                            <div class="input-field">
+                                <label for="title">first Heading</label>
+                                <input type="text"
+                                    placeholder="Enter first project title">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">second
+                                    Heading</label>
+                                <input type="text"
+                                    placeholder="Enter second project title">
+                            </div>
+                            <div class="input-field">
+                                <label for="title">third
+                                    Heading</label>
+                                <input type="text"
+                                    placeholder="Enter third project title">
+                            </div>
+                            <div class="input-field spanTwo">
+                                <label for="textarea">First project
+                                    descriptions</label>
+                                <textarea name="textarea"
+                                    placeholder="Enter project descriptions"></textarea>
+                            </div>
+                            <div class="input-field spanTwo">
+                                <label for="textarea">Second project
+                                    descriptions</label>
+                                <textarea name="textarea"
+                                    placeholder="Enter project descriptions"></textarea>
+                            </div>
+                            <div class="input-field spanTwo">
+                                <label for="textarea">Third project
+                                    descriptions</label>
+                                <textarea name="textarea"
+                                    placeholder="Enter project descriptions"></textarea>
+                            </div>
+                            <br>
+                            <h4>Process images</h4>
+                            <div class="input-field">
+                                <label for="title">Upload image for your third project
+                                    descriptions</label>
+                                <input type="file">
+                            </div>
+                            <br>
+                            <button>save changes</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- ==the landing page service card content== -->
+
+            </div>
+
+            <script src="./js/script.js"></script>
+        </body>
+    </html>
